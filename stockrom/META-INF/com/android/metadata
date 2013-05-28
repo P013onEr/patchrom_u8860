@@ -1,0 +1,3 @@
+post-build=huawei/cm_u8860/u8860:4.1.2/JZO54K/eng.shenduos.20130507.203556:userdebug/test-keys
+post-timestamp=1367930209
+pre-device=u8860

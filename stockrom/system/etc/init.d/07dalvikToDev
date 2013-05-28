@@ -1,0 +1,10 @@
+#!/system/bin/sh
+#begin  relocate and bind /cache/dalvik-cache to /data
+if [ ! -d /data/dalvik-cache ]
+then
+        mkdir /data/dalvik-cache
+        chown 1000:1000 /data/dalvik-cache
+        chmod 775 /data/dalvik-cache
+fi
+
+mount -o bind /data/dalvik-cache/ /cache/dalvik-cache/
